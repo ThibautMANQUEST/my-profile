@@ -1,0 +1,146 @@
+/* Styles généraux */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #6A8DFF, #86D5FF);
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Couleur principale */
+:root {
+    --main-blue: #002e63;
+    --light-gray: #f9f9f9;
+    --white: #ffffff;
+    --accent-yellow: #ffc107;
+    --accent-red: #e63946;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    align-items: center; /* Aligne verticalement les éléments */
+    padding: 15px 30px;
+    background: var(--main-blue);
+    color: var(--white);
+    animation: fadeIn 1s ease-in-out;
+    width: 100%; /* Assure que le header prend toute la largeur */
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; /* Centre horizontalement le texte et la photo */
+    align-items: center;
+    text-align: center; /* Centre également le texte */
+}
+
+.header-text {
+    margin-right: 20px;
+}
+
+.header-text h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header-text p {
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.header-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-yellow);
+}
+
+/* Sections */
+section {
+    margin: 20px auto;
+    max-width: 900px;
+    background: var(--light-gray);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-out;
+}
+
+section h2 {
+    color: var(--main-blue);
+    text-align: left;
+    border-bottom: 3px solid var(--main-blue);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Hobbies */
+.hobby {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.hobby-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Projets */
+.project-content {
+    display: flex;
+    align-items: center;
+}
+
+.project-image {
+    width: 120px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer-section {
+    text-align: center;
+    background: var(--main-blue);
+    color: var(--white);
+    padding: 10px;
+    margin-top: 40px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.footer-section a {
+    color: var(--accent-yellow);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
